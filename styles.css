@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #4f4f4f;
+}
+
+.container {
+  display: block;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.order-details h2 {
+  text-align: center;
+}
+
+.price {
+  position: absolute;
+  bottom: 50px;
+  font-size: 26px;
+}
+
+.order-info,
+.order-sandbox {
+  width: 50%;
+  height: 100%;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.order-info {
+  background: #ffe067;
+}
+
+.order-review {
+  font-size: 20px;
+  color: red;
+}
+
+.order-sandbox {
+  background: #eeedb8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pizza-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.pizza-piece {
+  width: 50%;
+  height: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+.pizza-wrapper .pizza-piece:nth-child(1) {
+  background-image: url(./assets/images/1.png);
+}
+
+.pizza-wrapper .pizza-piece:nth-child(2) {
+  background-image: url(./assets/images/2.png);
+}
+
+.pizza-wrapper .pizza-piece:nth-child(3) {
+  background-image: url(./assets/images/3.png);
+}
+
+.pizza-wrapper .pizza-piece:nth-child(4) {
+  background-image: url(./assets/images/4.png);
+}
+
+.order-sandbox .order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe067;
+  width: 300px;
+  height: 70px;
+  font-size: 28px;
+  margin: 20px auto;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.order-sandbox .order-btn:hover {
+  background: #ffd326;
+}
+
+.ingridients-table {
+  width: 100%;
+  background: #fff2ad;
+  padding: 20px 50px;
+}
+
+.ingridients-table thead th {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.ingridients-table tr td {
+  text-align: center;
+  cursor: pointer;
+}
+
+.ingridients-table tr td.selected {
+  color: red;
+}
